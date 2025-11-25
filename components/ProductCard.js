@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ProductCard({ product }) {
   return (
@@ -22,7 +23,10 @@ export default function ProductCard({ product }) {
         <strong className="price">{product.price}€ / {product.unit}</strong>
       </div>
       <p className="muted">{product.desc}</p>
-      <button className="btn small">Réserver</button>
+      <div style={{display:'flex', gap:8}}>
+        <Link className="btn small" href={`/catalogue/${product.slug}`}>Voir le détail</Link>
+        <button className="btn small">Réserver</button>
+      </div>
     </div>
   );
 }
