@@ -52,7 +52,7 @@ export default function ProductDetail({ params }) {
             <span className="muted">/ {product.unit} TTC</span>
           </div>
           <div style={{display:'flex', gap:8}}>
-            <button className="btn primary">Réserver</button>
+            <Link className="btn primary reserve-btn" href="/contact">Réserver</Link>
             <Link className="btn" href="/contact">Demander un devis</Link>
           </div>
         </div>

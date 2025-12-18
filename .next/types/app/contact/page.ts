@@ -1,4 +1,4 @@
-// File: C:\Users\hicham.roldan\Documents\export\HR\Kabyloutou\CascadeProjects\windsurf-project\bricoloc-site\app\contact\page.js
+// File: C:\Users\hicha\Desktop\DEV\PROJETS\Kabyloutou\Bricoloc\app\contact\page.js
 import * as entry from '../../../../app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

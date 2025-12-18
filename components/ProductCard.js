@@ -25,7 +25,7 @@ export default function ProductCard({ product }) {
       <p className="muted">{product.desc}</p>
       <div style={{display:'flex', gap:8}}>
         <Link className="btn small" href={`/catalogue/${product.slug}`}>Voir le détail</Link>
-        <button className="btn small">Réserver</button>
+        <Link className="btn small reserve-btn" href="/contact">Réserver</Link>
       </div>
     </div>
   );
