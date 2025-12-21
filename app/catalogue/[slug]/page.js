@@ -31,7 +31,7 @@ export default function ProductDetail({ params }) {
   return (
     <section>
       <nav style={{marginBottom:12}}>
-        <Link href="/catalogue">← Retour au catalogue</Link>
+        <Link className="btn back-btn" href="/catalogue">← Retour au catalogue</Link>
       </nav>
       <div className="grid product-detail" style={{gridTemplateColumns:'1.2fr .8fr', gap:16}}>
         <div>
