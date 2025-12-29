@@ -57,8 +57,11 @@ main.container{ padding: 32px 20px }
   .hero-banner .hero-content { min-height: 400px; padding: 60px 16px; }
   
   /* Grid mobile */
-  .grid, .grid.three { grid-template-columns: 1fr; gap: 12px; }
+  .grid, .grid.three { grid-template-columns: 1fr; gap: 20px; }
   .grid.product-detail { grid-template-columns: 1fr !important; }
+  
+  /* Features mobile spacing */
+  .features { padding: 40px 0; margin: 32px 0; }
   
   /* Product detail mobile fixes */
   .product-detail .card { padding: 16px; }
@@ -75,9 +78,40 @@ main.container{ padding: 32px 20px }
   .contact-page { padding: 0; }
   .contact-header { margin-bottom: 20px; }
   .contact-content { display: flex; flex-direction: column; gap: 16px; }
-  .contact-info { order: 2; }
-  .contact-details p { margin: 8px 0; line-height: 1.5; word-wrap: break-word; overflow-wrap: break-word; max-width: 100%; }
+  .contact-info { order: 2; text-align: center; padding: 24px; }
+  .contact-info h3 { margin-bottom: 20px; }
+  .contact-details { display: flex; flex-direction: column; gap: 32px; align-items: center; }
+  .contact-item { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px; 
+    align-items: center; 
+    padding: 16px 20px;
+    background: var(--leaf);
+    border-radius: 12px;
+    border: 1px solid color-mix(in srgb, var(--brand) 20%, var(--line));
+    min-width: 250px;
+  }
+  .contact-item p { margin: 0; line-height: 1.6; }
+  .contact-item p strong { 
+    color: var(--brand); 
+    font-size: 16px; 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .contact-item svg { color: var(--brand); }
+  .contact-item p:not(:first-child) { color: var(--text); font-size: 15px; }
+  .contact-details p { margin: 0; line-height: 1.6; word-wrap: break-word; overflow-wrap: break-word; max-width: 100%; }
   .contact-info { max-width: 100%; overflow: hidden; }
+  
+  /* Plans d'accès mobile */
+  .contact-plans { margin-top: 24px; text-align: center; }
+  .contact-plans h3 { margin-bottom: 16px; color: var(--brand); }
+  .plans-grid { display: flex; flex-direction: column; gap: 20px; margin-top: 16px; align-items: center; }
+  .plan-image { width: 100%; max-width: 700px; height: auto; border-radius: 8px; border: 1px solid var(--line); }
   
   h1 { font-size: 24px; margin: 0 0 16px; }
   h2 { font-size: 20px; }
@@ -97,8 +131,8 @@ main.container{ padding: 32px 20px }
   .footer .links { justify-content: center; }
   
   /* Actions mobile */
-  .actions { flex-direction: column; align-items: stretch; }
-  .actions .btn { width: 100%; }
+  .actions { flex-direction: column; align-items: center; gap: 16px; }
+  .actions .btn { width: auto; min-width: 200px; max-width: 280px; }
 }
 
 @media (max-width: 480px) {
@@ -126,6 +160,9 @@ main.container{ padding: 32px 20px }
 
 .card{ background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px; transition: box-shadow .2s ease, border-color .2s ease, transform .06s ease }
 .card:hover{ border-color: color-mix(in srgb, var(--brand) 35%, var(--line)); box-shadow: 0 6px 24px rgba(35,179,110,.12) }
+.card.product{ display: flex; flex-direction: column; height: 100%; min-height: 500px; }
+.card.product .product-head{ margin-top: auto; }
+.card.product .muted{ flex-grow: 1; }
 .card.form{ margin: 16px 0 }
 .field{ display:grid; gap:6px; margin:10px 0 }
 input, textarea{ background:#ffffff; color:var(--text); border:1px solid var(--line); border-radius:10px; padding:10px 12px }
@@ -133,11 +170,33 @@ input, textarea{ background:#ffffff; color:var(--text); border:1px solid var(--l
 .product .product-head{ display:flex; align-items:center; justify-content:space-between; gap:8px }
 .price{ color:var(--brand) }
 .muted{ color:var(--muted) }
-.product .thumb{ width:100%; height:auto; border-radius:12px; object-fit:cover; border:1px solid var(--line); margin-bottom:12px }
+.thumb-container {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.product .thumb{ 
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
 /* Mobile responsive image fixes */
 @media (max-width: 768px) {
-  .thumb { max-width: 100%; height: auto; }
+  .thumb-container {
+    height: 300px;
+  }
+  .card.product{ min-height: 450px; }
 }
 
 .footer{ border-top:1px solid var(--line); margin-top:48px }
@@ -162,6 +221,48 @@ input, textarea{ background:#ffffff; color:var(--text); border:1px solid var(--l
 .reserve-btn:hover{ background: var(--brand-600) !important; border-color: var(--brand-600) !important; box-shadow: 0 6px 18px rgba(35,179,110,.25) !important; }
 
 section{ padding: 16px 0 }
+
+/* Contact page styles for desktop */
+.contact-info { text-align: center; padding: 32px; }
+.contact-info h3 { margin-bottom: 24px; }
+.contact-details { display: flex; flex-direction: column; gap: 32px; align-items: center; }
+
+/* Plans d'accès styles */
+.contact-plans { margin-top: 32px; text-align: center; }
+.contact-plans h3 { margin-bottom: 24px; color: var(--brand); }
+.plans-grid { display: flex; flex-direction: column; gap: 32px; margin-top: 20px; align-items: center; }
+.plan-item { display: flex; justify-content: center; }
+.plan-image { border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.plan-image:hover { transform: scale(1.02); box-shadow: 0 8px 24px rgba(35,179,110,0.15); }
+
+/* About location section */
+.about-location { margin-top: 48px; text-align: center; }
+.about-location h2 { color: var(--brand); margin-bottom: 16px; }
+.about-location p { margin-bottom: 24px; color: var(--muted); }
+.contact-item { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+  align-items: center; 
+  padding: 20px 24px;
+  background: var(--leaf);
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--brand) 20%, var(--line));
+  min-width: 280px;
+}
+.contact-item p { margin: 0; line-height: 1.6; }
+.contact-item p strong { 
+  color: var(--brand); 
+  font-size: 18px; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.contact-item svg { color: var(--brand); }
+.contact-item p:not(:first-child) { color: var(--text); font-size: 16px; }
+
 h1{ font-size:28px; margin:0 0 12px }
 h2{ font-size:22px; margin:0 0 8px }
 h3{ font-size:18px; margin:0 0 6px }

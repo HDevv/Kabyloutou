@@ -1,11 +1,4 @@
-CATALOGUE 
-ajouter les images (plusieurs images par produit)
-ajouter une page de détail pour chaque produit (autres images + description détaillée)
+Demande 
 
-
-
-PAGE CONTACT
-map pour la localisation 
-réseaux sociaux (instagram, snapchat, fb)
-Faire un formulaire de contact fonctionnel 
-Choisir quels champs laisser
+Manque le karcher 
+demander si il veut plusieurs pages pour les produits 
