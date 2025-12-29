@@ -39,7 +39,7 @@ export default function ProductDetail({ params }) {
             product.raw ? (
               <img className="thumb" src={encodeURI(product.image)} alt={product.name} />
             ) : (
-              <Image className="thumb" src={product.image} alt={product.name} width={900} height={600} />
+              <Image className="thumb" src={product.image} alt={product.name} width={600} height={400} />
             )
           )}
         </div>

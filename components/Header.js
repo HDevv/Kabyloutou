@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ConseilDropdown from './ConseilDropdown';
 
 export default function Header() {
   return (
@@ -9,6 +10,7 @@ export default function Header() {
         </Link>
         <nav className="nav">
           <Link href="/catalogue">Catalogue</Link>
+          <ConseilDropdown />
           <Link href="/a-propos">À propos</Link>
           <Link className="btn small" href="/contact">Contact</Link>
         </nav>

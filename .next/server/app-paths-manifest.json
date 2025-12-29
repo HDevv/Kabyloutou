@@ -1,7 +1,7 @@
 {
-  "/page": "app/page.js",
   "/catalogue/page": "app/catalogue/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/catalogue/[slug]/page": "app/catalogue/[slug]/page.js",
-  "/a-propos/page": "app/a-propos/page.js"
+  "/conseil/marteau-piqueur-burin/page": "app/conseil/marteau-piqueur-burin/page.js",
+  "/conseil/page": "app/conseil/page.js",
+  "/page": "app/page.js",
+  "/catalogue/[slug]/page": "app/catalogue/[slug]/page.js"
 }
