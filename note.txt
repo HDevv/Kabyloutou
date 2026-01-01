@@ -1,3 +1,4 @@
 Demande 
 
-refaire les img de la page détail en version desktop 
+refaire les img des pages conseils 
+mettre les liens des réseaux pour les icones 

@@ -1,7 +1,7 @@
 {
+  "/contact/page": "app/contact/page.js",
   "/catalogue/page": "app/catalogue/page.js",
-  "/conseil/marteau-piqueur-burin/page": "app/conseil/marteau-piqueur-burin/page.js",
-  "/conseil/page": "app/conseil/page.js",
-  "/page": "app/page.js",
-  "/catalogue/[slug]/page": "app/catalogue/[slug]/page.js"
+  "/catalogue/[slug]/page": "app/catalogue/[slug]/page.js",
+  "/conseil/preparation-sol-semis/page": "app/conseil/preparation-sol-semis/page.js",
+  "/conseil/page": "app/conseil/page.js"
 }

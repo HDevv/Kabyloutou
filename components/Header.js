@@ -11,7 +11,6 @@ export default function Header() {
         <nav className="nav">
           <Link href="/catalogue">Catalogue</Link>
           <ConseilDropdown />
-          <Link href="/a-propos">À propos</Link>
           <Link className="btn small" href="/contact">Contact</Link>
         </nav>
       </div>

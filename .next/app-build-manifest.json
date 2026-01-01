@@ -16,6 +16,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/catalogue/page.js"
     ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/conseil/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/conseil/page.js"
+    ],
     "/catalogue/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -25,51 +35,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/conseil/preparation-sol-semis/page.js"
-    ],
-    "/conseil/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/page.js"
-    ],
-    "/conseil/motoculteur-guide/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/motoculteur-guide/page.js"
-    ],
-    "/conseil/rotovator-guide/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/rotovator-guide/page.js"
-    ],
-    "/conseil/motobineuse-guide/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/motobineuse-guide/page.js"
-    ],
-    "/conseil/debroussailleuse-utilisation/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/debroussailleuse-utilisation/page.js"
-    ],
-    "/conseil/marteau-piqueur-burin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/marteau-piqueur-burin/page.js"
-    ],
-    "/a-propos/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/a-propos/page.js"
-    ],
-    "/conseil/dameuse-compactage/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/dameuse-compactage/page.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
     ]
   }
 }

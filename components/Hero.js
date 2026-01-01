@@ -10,7 +10,7 @@ export default function Hero() {
       </div>
       <div className="container hero-content">
         <h1>Location de matériel de jardinage et travaux pour particuliers et professionnels</h1>
-        <p className="muted">Louez de MATÉRIEL DE QUALITÉ à des PRIX ATTRACTIFS avec de BONS CONSEILS</p>
+        <p className="muted">N'achetez plus ! Louez du matériel de qualité à des prix attractifs</p>
         <div className="actions">
           <Link className="btn primary" href="/catalogue">Voir le catalogue</Link>
           <Link className="btn" href="/contact">Demander un devis</Link>
