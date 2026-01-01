@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/catalogue/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/catalogue/[slug]/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,25 +16,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/catalogue/page.js"
     ],
-    "/contact/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
-    ],
-    "/conseil/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/page.js"
-    ],
-    "/catalogue/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/catalogue/[slug]/page.js"
-    ],
-    "/conseil/preparation-sol-semis/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/conseil/preparation-sol-semis/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

@@ -1,7 +1,4 @@
 {
-  "/contact/page": "app/contact/page.js",
-  "/catalogue/page": "app/catalogue/page.js",
   "/catalogue/[slug]/page": "app/catalogue/[slug]/page.js",
-  "/conseil/preparation-sol-semis/page": "app/conseil/preparation-sol-semis/page.js",
-  "/conseil/page": "app/conseil/page.js"
+  "/catalogue/page": "app/catalogue/page.js"
 }

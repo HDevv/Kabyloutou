@@ -8,13 +8,15 @@ export default function Contact() {
     <section className="contact-page">
       <div className="contact-header">
         <h1>Contact</h1>
-        <p>Une question, un devis, une réservation ? Écrivez-nous, nous répondons rapidement.</p>
+        <p>Une question, un devis, une réservation ? Appelez-nous ou écrivez-nous, nous vous répondrons rapidement.</p>
       </div>
       
       <div className="about-section">
         <h2>À propos de Kabyloutou</h2>
-        <p>Kabyloutou est spécialisé dans la location de matériel de jardinage, travaux et bricolage pour particuliers et professionnels.</p>
-        <p>Notre mission : vous fournir des équipements fiables, bien entretenus, au meilleur prix, avec des conseils personnalisés.</p>
+        <p>Kabyloutou est dans une logique écologique et durable.</p>
+        <p>Spécialisé dans la location de matériel de jardinage et 
+          travaux pour particuliers et professionnels, notre mission est de vous fournir des équipements fiables et bien entretenus, aux meilleurs prix et avec des conseils personnalisés.
+        </p>
         <ul className="list">
           <li>Parc matériel vérifié et entretenu</li>
           <li>Des tarifs transparents</li>

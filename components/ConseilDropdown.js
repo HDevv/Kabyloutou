@@ -61,7 +61,7 @@ export default function ConseilDropdown() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link href="/conseil" className="conseil-link">
+      <Link href="/conseil" className="btn small conseil-link">
         Conseils
         <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>

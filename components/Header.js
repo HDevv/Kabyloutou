@@ -9,7 +9,7 @@ export default function Header() {
           <span className="brand-title"><span className="brand-k">K</span>abyloutou</span>
         </Link>
         <nav className="nav">
-          <Link href="/catalogue">Catalogue</Link>
+          <Link className="btn small" href="/catalogue">Catalogue</Link>
           <ConseilDropdown />
           <Link className="btn small" href="/contact">Contact</Link>
         </nav>

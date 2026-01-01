@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="hero-overlay" />
       </div>
       <div className="container hero-content">
-        <h1>Location de matériel de jardinage et travaux pour particuliers et professionnels</h1>
+        <h1>Location de matériel de jardinage<br />et travaux pour particuliers<br />et professionnels</h1>
         <p className="muted">N'achetez plus ! Louez du matériel de qualité à des prix attractifs</p>
         <div className="actions">
           <Link className="btn primary" href="/catalogue">Voir le catalogue</Link>
