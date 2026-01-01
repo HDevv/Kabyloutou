@@ -1,7 +1,7 @@
 export default function Features() {
   const feats = [
-    { title: 'Large choix', desc: 'Outils pro et grand public.' },
-    { title: 'Tarifs clairs', desc: 'Prix à la journée, weekend et semaine, sans surprises.' },
+    { title: 'Large choix', desc: 'Outils pro et grand public' },
+    { title: 'Tarifs clairs', desc: 'Prix à la journée, weekend et semaine, sans surprises' },
     { title: 'Conseils pros', desc: 'Un accompagnement avec des conseils pour vous faciliter la vie et pour que vos travaux deviennent un plaisir' }
   ];
 

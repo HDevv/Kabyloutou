@@ -34,12 +34,12 @@ export default function ProductDetail({ params }) {
         <Link className="btn detail back-btn" href="/catalogue">← Retour au catalogue</Link>
       </nav>
       <div className="grid product-detail" style={{gridTemplateColumns:'1.2fr .8fr', gap:16}}>
-        <div>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '350px'}}>
           {product.image && (
             product.raw ? (
               <img className="thumb" src={encodeURI(product.image)} alt={product.name} />
             ) : (
-              <Image className="thumb" src={product.image} alt={product.name} width={600} height={500} />
+              <Image className="thumb" src={product.image} alt={product.name} width={600} height={350} />
             )
           )}
         </div>
@@ -55,6 +55,7 @@ export default function ProductDetail({ params }) {
             <strong className="price" style={{fontSize:20}}>{formatPriceTTC(product.price)}</strong>
             <span className="muted">/ {product.unit} TTC</span>
           </div>
+          <hr style={{border: 'none', borderTop: '1px solid var(--line)', margin: '20px 0'}} />
           <div style={{display:'flex', gap:8}}>
             <Link className="btn primary reserve-btn" href="/contact">Réserver</Link>
             <Link className="btn detail" href="/contact" style={{lineHeight:'1.2'}}>Demander un devis</Link>
