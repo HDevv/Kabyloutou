@@ -22,7 +22,7 @@ export default function ContactForm() {
   };
 
   const sanitizeInput = (input) => {
-    return input.trim().replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+    return input.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
   };
 
   const validateForm = () => {
@@ -104,7 +104,7 @@ export default function ContactForm() {
         from_email: sanitizeInput(form.email),
         phone: sanitizeInput(form.phone),
         message: sanitizeInput(form.message),
-        to_email: 'bag2pain@proton.me',
+        to_email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@example.com',
         timestamp: new Date().toISOString()
       };
 

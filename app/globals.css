@@ -356,6 +356,24 @@ input, textarea{ background:#ffffff; color:var(--text); border:1px solid var(--l
   }
 }
 
+@media (max-width: 410px) {
+  .conseil-dropdown-menu {
+    position: fixed;
+    top: 60px;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .conseil-dropdown-item {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
 .conseil-dropdown-item {
   display: block;
   padding: 12px 16px;
