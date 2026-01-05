@@ -34,12 +34,12 @@ export default function ProductDetail({ params }) {
         <Link className="btn detail back-btn" href="/catalogue">← Retour au catalogue</Link>
       </nav>
       <div className="grid product-detail" style={{gridTemplateColumns:'1.2fr .8fr', gap:16}}>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '350px'}}>
+        <div className="product-image-wrapper" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '400px', padding: '20px', background: 'var(--leaf)', borderRadius: '16px'}}>
           {product.image && (
             product.raw ? (
               <img className="thumb" src={encodeURI(product.image)} alt={product.name} />
             ) : (
-              <Image className="thumb" src={product.image} alt={product.name} width={600} height={350} />
+              <Image className="thumb" src={product.image} alt={product.name} width={0} height={0} sizes="100vw" style={{width: 'auto', maxWidth: '100%', height: 'auto', maxHeight: '100%'}} />
             )
           )}
         </div>
