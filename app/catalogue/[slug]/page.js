@@ -28,18 +28,42 @@ export default function ProductDetail({ params }) {
     );
   }
 
+  const isTronconneuse = product.slug === 'tronconneuse-thermique';
+  const isMotoculteur = product.slug === 'motoculteur';
+  const isDecoupeuseBeton = product.slug === 'decoupeuse-beton';
+  const isPilonneuse = product.slug === 'pilonneuse';
+  const isBetonniere = product.slug === 'betonniere';
+  const isCompactImage = isTronconneuse || isMotoculteur || isDecoupeuseBeton || isPilonneuse || isBetonniere;
+
+  const imageWrapperStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: isCompactImage ? '280px' : '400px',
+    padding: isCompactImage ? '12px' : '20px',
+    background: 'var(--leaf)',
+    borderRadius: '16px'
+  };
+
+  const imageStyle = {
+    width: 'auto',
+    maxWidth: isCompactImage ? '85%' : '100%',
+    height: 'auto',
+    maxHeight: isCompactImage ? '85%' : '100%'
+  };
+
   return (
     <section>
       <nav style={{marginBottom:12}}>
         <Link className="btn detail back-btn" href="/catalogue">← Retour au catalogue</Link>
       </nav>
       <div className="grid product-detail" style={{gridTemplateColumns:'1.2fr .8fr', gap:16}}>
-        <div className="product-image-wrapper" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '400px', padding: '20px', background: 'var(--leaf)', borderRadius: '16px'}}>
+        <div className={`product-image-wrapper${isTronconneuse ? ' tronconneuse' : ''}${isMotoculteur ? ' motoculteur' : ''}${isDecoupeuseBeton ? ' decoupeuse-beton' : ''}${isPilonneuse ? ' pilonneuse' : ''}${isBetonniere ? ' betonniere' : ''}`} style={imageWrapperStyle}>
           {product.image && (
             product.raw ? (
               <img className="thumb" src={encodeURI(product.image)} alt={product.name} />
             ) : (
-              <Image className="thumb" src={product.image} alt={product.name} width={0} height={0} sizes="100vw" style={{width: 'auto', maxWidth: '100%', height: 'auto', maxHeight: '100%'}} />
+              <Image className="thumb" src={product.image} alt={product.name} width={0} height={0} sizes="100vw" style={imageStyle} />
             )
           )}
         </div>

@@ -374,6 +374,58 @@ input, textarea{ background:#ffffff; color:var(--text); border:1px solid var(--l
   }
 }
 
+@media (min-width: 769px) {
+  .product-image-wrapper.tronconneuse {
+    height: 280px !important;
+    padding: 12px !important;
+  }
+
+  .product-image-wrapper.tronconneuse .thumb {
+    max-width: 85% !important;
+    max-height: 85% !important;
+  }
+
+  .product-image-wrapper.motoculteur {
+    height: 280px !important;
+    padding: 12px !important;
+  }
+
+  .product-image-wrapper.motoculteur .thumb {
+    max-width: 85% !important;
+    max-height: 85% !important;
+  }
+
+  .product-image-wrapper.decoupeuse-beton {
+    height: 280px !important;
+    padding: 12px !important;
+  }
+
+  .product-image-wrapper.decoupeuse-beton .thumb {
+    max-width: 85% !important;
+    max-height: 85% !important;
+  }
+
+  .product-image-wrapper.pilonneuse {
+    height: 280px !important;
+    padding: 12px !important;
+  }
+
+  .product-image-wrapper.pilonneuse .thumb {
+    max-width: 85% !important;
+    max-height: 85% !important;
+  }
+
+  .product-image-wrapper.betonniere {
+    height: 280px !important;
+    padding: 12px !important;
+  }
+
+  .product-image-wrapper.betonniere .thumb {
+    max-width: 85% !important;
+    max-height: 85% !important;
+  }
+}
+
 .conseil-dropdown-item {
   display: block;
   padding: 12px 16px;
