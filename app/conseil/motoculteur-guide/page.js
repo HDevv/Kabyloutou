@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import conseil3 from './conseil3.png';
 
 export const metadata = {
   title: 'Qu\'est-ce qu\'un motoculteur ? - Conseils Kabyloutou',
@@ -17,6 +20,9 @@ export default function MotoculteurGuidePage() {
         <p className="muted">Tout savoir sur le motoculteur et ses applications</p>
         
         <div className="card">
+          <div className="conseil-image-container">
+            <Image src={conseil3} alt="Motoculteur" className="conseil-image" />
+          </div>
           
           <p>Le motoculteur a plusieurs avantages de taille : il permet à ses utilisateurs de gagner du temps et d'éviter fatigue et efforts lors du labourage de leur jardin. Cet appareil se compose d'un moteur thermique, de deux roues agraires dont la largeur et le diamètre varient d'un modèle à un autre, d'un guidon orientable et d'une charrue (pour certains modèles).</p>
           

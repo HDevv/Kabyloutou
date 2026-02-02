@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import conseil2 from './conseil2.png';
 
 export const metadata = {
   title: 'Qu\'est ce que la motobineuse ? - Conseils Kabyloutou',
@@ -18,11 +21,7 @@ export default function MotobineuseGuidePage() {
         
         <div className="card">
           <div className="conseil-image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center" 
-              alt="Motobineuse en action dans un jardin" 
-              className="conseil-image"
-            />
+            <Image src={conseil2} alt="Motobineuse en action dans un jardin" className="conseil-image" />
           </div>
           
           <p>Entretenir son jardin à mains nues s'avère être pénible surtout si la propriété est assez vaste.</p>

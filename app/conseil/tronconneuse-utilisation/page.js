@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import conseil4 from './conseil4.png';
 
 export const metadata = {
   title: 'Utilisation d\'une tronçonneuse - Conseils Kabyloutou',
@@ -18,11 +21,7 @@ export default function TronconneuseUtilisationPage() {
         
         <div className="card">
           <div className="conseil-image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5e?w=600&h=400&fit=crop&crop=center" 
-              alt="Utilisation sécurisée d'une tronçonneuse" 
-              className="conseil-image"
-            />
+            <Image src={conseil4} alt="Utilisation sécurisée d'une tronçonneuse" className="conseil-image" />
           </div>
           
           <p>D'une très grande efficacité, la tronçonneuse est l'outil phare des activités de bûcheronnage : élagage, ébranchage, abattage des arbres, débit du bois de chauffage et entretien des espaces verts.</p>

@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import conseil1 from './conseil1.png';
 
 export const metadata = {
   title: 'Préparation du sol pour semer les graines - Conseils Kabyloutou',
@@ -18,13 +21,9 @@ export default function PreparationSolSemisPage() {
         
         <div className="card">
           <div className="conseil-image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=600&h=400&fit=crop&crop=center" 
-              alt="Préparation du terrain pour semis" 
-              className="conseil-image"
-            />
+            <Image src={conseil1} alt="Préparation du sol pour semer les graines" className="conseil-image" />
           </div>
-          
+
           <p>La première étape, sans doute la plus importante est de bien préparer votre terrain.</p>
           
           <p>Commencez par enlever les mauvaises herbes, et tondre au plus ras possible votre herbe.</p>
@@ -40,14 +39,6 @@ export default function PreparationSolSemisPage() {
           <p>Maintenant que le sol est à nu et que toutes les plantes et mauvaises herbes ont été supprimées, il faut niveler le sol. Cette opération permet d'obtenir une surface plane et aérée. La mise à niveau se fait à l'aide d'un croc ou d'un râteau. Il s'agit de boucher les trous et d'aplanir les mottes.</p>
           
           <h2>SEMER LES GRAINES</h2>
-          
-          <div className="conseil-image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1574263867128-b2b7e9e5b6b3?w=600&h=400&fit=crop&crop=center" 
-              alt="Semis de graines de gazon" 
-              className="conseil-image"
-            />
-          </div>
           
           <p>Avant l'ensemencement, choisissez le type de gazon adapté à vos besoins. Votre choix doit tenir compte du climat et de l'emplacement (jardin, terrain de sport, coin ombragé, terrain sec…). Il faut considérer aussi les fréquences de passage. En effet, on trouve des gazons qui résistent mieux au piétinement, ainsi pour une utilisation type aire de jeux pour vos enfants et donc beaucoup piétiné, vous choisirez le gazon « sport et jeux ».</p>
           

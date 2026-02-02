@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import conseil5 from './conseil5.png';
 
 export const metadata = {
   title: 'Qu\'est ce que le rotovator ? - Conseils Kabyloutou',
@@ -18,11 +21,7 @@ export default function RotovatorGuidePage() {
         
         <div className="card">
           <div className="conseil-image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=600&h=400&fit=crop&crop=center" 
-              alt="Rotovator préparant le sol" 
-              className="conseil-image"
-            />
+            <Image src={conseil5} alt="Rotovator préparant le sol" className="conseil-image" />
           </div>
           
           <p>C'est un engin agricole qui permet de retourner sa terre, il est plus puissant que la bineuse ou la motobineuse.</p>
