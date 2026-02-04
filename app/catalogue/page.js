@@ -1,9 +1,10 @@
 import ProductCard from '../../components/ProductCard';
-import { products } from '../../lib/products';
+import { getProducts } from '../../lib/products-loader';
 
 export const metadata = { title: 'Catalogue - Kabyloutou' };
 
-export default function Catalogue() {
+export default async function Catalogue() {
+  const products = await getProducts();
   return (
     <section>
       <h1>Catalogue</h1>

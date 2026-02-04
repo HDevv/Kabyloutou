@@ -1,23 +1,24 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { products, getProductBySlug, formatPriceTTC } from '../../../lib/products';
+import { getProducts, getProductBySlug, formatPriceTTC } from '../../../lib/products-loader';
 
 export async function generateStaticParams() {
+  const products = await getProducts();
   return products.map(p => ({ slug: p.slug }));
 }
 
 export const dynamicParams = false;
 
-export function generateMetadata({ params }) {
-  const p = getProductBySlug(params.slug);
+export async function generateMetadata({ params }) {
+  const product = await getProductBySlug(params.slug);
   return {
-    title: p ? `${p.name} - Kabyloutou` : 'Produit',
-    description: p ? p.desc : 'Détail produit'
+    title: product ? `${product.name} - Kabyloutou` : 'Produit',
+    description: product ? product.desc : 'Détail produit'
   };
 }
 
-export default function ProductDetail({ params }) {
-  const product = getProductBySlug(params.slug);
+export default async function ProductDetail({ params }) {
+  const product = await getProductBySlug(params.slug);
   if (!product) {
     return (
       <section>
