@@ -1,9 +1,5 @@
 {
-  "/conseil/preparation-sol-semis/page": "app/conseil/preparation-sol-semis/page.js",
-  "/conseil/page": "app/conseil/page.js",
-  "/conseil/tronconneuse-utilisation/page": "app/conseil/tronconneuse-utilisation/page.js",
-  "/conseil/rotovator-guide/page": "app/conseil/rotovator-guide/page.js",
-  "/conseil/motobineuse-guide/page": "app/conseil/motobineuse-guide/page.js",
-  "/conseil/motoculteur-guide/page": "app/conseil/motoculteur-guide/page.js",
-  "/conseil/debroussailleuse-utilisation/page": "app/conseil/debroussailleuse-utilisation/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/conseil/page": "app/conseil/page.js"
 }

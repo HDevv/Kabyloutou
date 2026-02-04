@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import conseil7 from './conseil7.png';
 
 export const metadata = {
   title: 'Pourquoi compacter avec une dameuse / plaque vibrante ? - Conseils Kabyloutou',
@@ -17,6 +20,9 @@ export default function DameuseCompactagePage() {
         <p className="muted">L'importance du compactage et comment bien l'effectuer</p>
         
         <div className="card">
+          <div className="conseil-image-container">
+            <Image src={conseil7} alt="Compactage avec une dameuse / plaque vibrante" className="conseil-image" />
+          </div>
           
           <h2>Pourquoi compacter un sol ?</h2>
           

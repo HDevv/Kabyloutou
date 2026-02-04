@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import conseil6 from './conseil6.png';
 
 export const metadata = {
   title: 'Utilisation d\'une débroussailleuse - Conseils Kabyloutou',
@@ -18,11 +21,7 @@ export default function DebroussailleuseUtilisationPage() {
         
         <div className="card">
           <div className="conseil-image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop&crop=center" 
-              alt="Débroussailleuse en action" 
-              className="conseil-image"
-            />
+            <Image src={conseil6} alt="Débroussailleuse en action" className="conseil-image" />
           </div>
           
           <h2>Préparation du terrain</h2>

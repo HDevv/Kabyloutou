@@ -12,7 +12,7 @@ export default function Footer() {
             <a href="#" aria-disabled>Mentions légales</a>
           </div>
           <div className="social" aria-label="Réseaux sociaux">
-            <a className="social-link" href="#" aria-label="Snapchat" title="Snapchat">
+            <a className="social-link" href="https://www.snapchat.com/add/kabyloutou?share_id=ISADVOZHRHidNl" target="_blank" rel="noopener noreferrer" aria-label="Snapchat" title="Snapchat">
               <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
                 <path fill="currentColor" d="M12.05 3c-2.12 0-3.9 1.71-3.96 3.84-.02.58.02 1.16.12 1.72-.56.55-1.32.94-2.27 1.15-.64.14-1.01.47-1.01.92 0 .47.4.86 1.08 1.07.43.14.97.42 1.42.73.19.13.29.36.25.59-.17.92-.91 1.68-2.21 2.27-.66.3-1.02.71-1.02 1.15 0 .47.43.86 1.13 1.04.59.15 1.11.1 1.58-.15.41-.21.86-.31 1.35-.31.51 0 1.05.11 1.62.34.59.24 1.1.35 1.56.35.46 0 .98-.11 1.56-.35.57-.23 1.11-.34 1.62-.34.49 0 .95.1 1.35.31.47.25.99.3 1.58.15.7-.18 1.13-.57 1.13-1.04 0-.44-.36-.85-1.02-1.15-1.3-.59-2.04-1.35-2.21-2.27-.04-.23.06-.46.25-.59.45-.31.99-.59 1.42-.73.68-.21 1.08-.6 1.08-1.07 0-.45-.37-.78-1.01-.92-.95-.21-1.71-.6-2.27-1.15.1-.56.14-1.14.12-1.72C15.95 4.71 14.17 3 12.05 3Z" />
               </svg>
