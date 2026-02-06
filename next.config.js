@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  distDir: 'dist',
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'picsum.photos' }
-    ]
+    ], 
+    unoptimized: true
   },
   async headers() {
     return [
